@@ -17,7 +17,7 @@ public class Main {
 		al.add(e3);
 		al.add(e4);
 		
-		Collections.sort(al);//,new DeptComparator());
+		Collections.sort(al,new NameComparator());
 		
 		for (Employee employee : al) {
 			System.out.println(employee);

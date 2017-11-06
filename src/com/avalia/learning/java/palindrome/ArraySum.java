@@ -19,25 +19,9 @@ public class ArraySum {
 		// }
 		//
 
-		class Complement {
-			int first;
-			int second;
-
-			public Complement(int first, int second) {
-				super();
-				this.first = first;
-				this.second = second;
-			}
-
-			@Override
-			public String toString() {
-				return first + ":" + second;
-			}
-		}
-
 		List<Complement> al = new ArrayList<>();
 		for (int i = 0; i < a.length; i++) {
-			for (int j = i+1; j < a.length; j++) {
+			for (int j = i + 1; j < a.length; j++) {
 				if (a[i] + a[j] == 16) {
 					al.add(new Complement(a[i], a[j]));
 				}

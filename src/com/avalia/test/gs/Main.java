@@ -22,14 +22,13 @@ public class Main {
 			String[] emp = string.split(",");
 			int dept = Integer.parseInt(emp[2].trim());
 			int sal = Integer.parseInt(emp[3].trim());
-		//	Integer lowestSalary = map.get(dept);
-//			if (lowestSalary == null) {
-//				map.put(dept, sal);
-//			else if (sal < lowestSalary) {
+			Integer lowestSalary = map.get(dept);
+			if (lowestSalary == null) {
+				map.put(dept, sal);
+			} else if (sal < lowestSalary) {
 				map.put(dept, sal);
 			}
-
-	//	}
+		}
 		return map.lastEntry().getValue();
 	}
 

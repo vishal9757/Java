@@ -8,27 +8,27 @@ public class Main {
 		Node n3 = new Node(7);
 		Node n4 = new Node(8);
 		Node n5 = new Node(9);
-		n1.add(n2);
-		n2.add(n3);
-		n3.add(n4);
-		n4.add(n5);
+//		n1.add(n2);
+//		n2.add(n3);
+//		n3.add(n4);
+//		n4.add(n5);
 		
 		Node head = n1;
 		print(head);
 //		Node n = reverse(head);
 //		print(n);
 
-		// MyLinkedList l1 = new MyLinkedList();
-		//
-		// l1.queue(5);
-		// l1.queue(5);
-		// l1.queue(6);
-		// l1.queue(7);
-		// l1.queue(5);
-		// l1.queue(5);
-		// System.out.println(l1);
-		// l1.dequeue();
-		// System.out.println(l1);
+		 MyLinkedList l1 = new MyLinkedList();
+		
+		 l1.queue(5);
+		 l1.queue(5);
+		 l1.queue(6);
+		 l1.queue(7);
+		 l1.queue(5);
+		 l1.queue(5);
+		 System.out.println(l1);
+		 l1.dequeue();
+		 System.out.println(l1);
 
 	}
 
